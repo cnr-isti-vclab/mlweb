@@ -40,6 +40,10 @@ body {
     margin-bottom: 20px;
 }
 
+.btn-thumbnail {
+    background-color: transparent
+}
+
 .#description {
     height: 20px;
 }
