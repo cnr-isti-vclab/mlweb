@@ -49,6 +49,7 @@
                     <li><a href="#download"><i class="fa fa-cloud-download fa-fw"></i> Download</a></li>
                     <li><a href="#features"><i class="fa fa-tasks fa-fw"></i> Features</a></li>
                     <li><a href="#support"><i class="fa fa-question-circle fa-fw"></i> Support</a></li>
+                    <li><a href="#references"><i class="fa fa-book fa-fw"></i> References</a></li>
                     <li><a href="#about"><i class="fa fa-envelope fa-fw"></i> About</a></li>
                 </ul>
 
@@ -103,8 +104,6 @@
         </div>
 
 
-
-
         <div class="row row-small" id="news">
             <div class="col-xs-12">
                 <h2><strong>News</strong></h2>
@@ -131,8 +130,6 @@
         <div class="row row-small" id="download">
             <div class="col-xs-12">
                 <h2><strong>Download</strong></h2>
-            </div>
-            <div class="col-xs-12">
                 <div class="well">
                     <div class="row">
                         <div class="col-xs-12 col-md-10">
@@ -151,7 +148,6 @@
             </div>
             <div class="col-hidden-xs col-md-1"></div>
         </div>
-
 
 
         <div class="row row-content" id="features">
@@ -196,7 +192,6 @@
                 </div>
             </div>
 
-
             <div class="col-xs-12 col-md-6">
                 <div class="row" ng-controller="featuresController as featuresCtrl">
 
@@ -232,7 +227,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
 
@@ -345,49 +339,79 @@
 
             </div>
         </div>
+
+
+
+        <div class="row row-small" id="references">
+            <div class="col-xs-12">
+                <h2><strong>References</strong></h2> The simplest way to show your appreciation of the MeshLab system is to remember citing it whenever you have used some of its functionalities.
+                <br> There are many publications related with MeshLab, in case of doubt use the first one, but, please, look through the list and cite also all the proper ones.
+                <br>
+                <div class="col-xs-12 col-md-12">
+                    <div class="row" ng-controller="featuresController as paperCtrl ">
+                        <div class="table-responsive">
+                            <table class="table" ng-repeat="pi in paperCtrl.papers">
+                                <tr>
+                                    <td class="col-xs-3"><i>{{pi.description}}</i></td>
+                                    <td class="col-xs-7"><i>{{pi.paperAuthors}}</i>
+                                        <br/><b>{{pi.paperTitle}}</b>
+                                        <br/>{{pi.paperVenue}}, {{pi.paperYear}}</td>
+                                    <td class="col-xs-1">
+                                        <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#id_bib_{{$index}}"><i class="fa fa-book fa-fw "></i>bibTeX</button>
+                                        <div id="id_bib_{{$index}}" class="collapse ">
+                                            <small><code>{{pi.bibtex}}</code></small>
+                                        </div>
+                                    </td>
+                                    <td class="col-xs-1">
+                                        <a href={{pi.paperPDF}} class="btn btn-primary btn-block " role="button "> <i class="fa fa-file-pdf-o fa-fw "></i>PDF</a>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
+    <footer class="row-footer ">
+        <div class="container ">
+            <div class="row " id="about ">
 
+                <div class="col-xs-12 col-sm-5 ">
 
-
-
-
-
-    <footer class="row-footer">
-        <div class="container">
-            <div class="row" id="about">
-
-                <div class="col-xs-12 col-sm-5">
-
-                    <a href="http://www.cnr.it/">
-                        <img src="img/cnrLogo.png" alt="cnr logo" height="80" width="80">
+                    <a href="http://www.cnr.it/ ">
+                        <img src="img/cnrLogo.png " alt="cnr logo " height="80 " width="80 ">
                     </a>
 
 
-                    <a href="http://www.isti.cnr.it/">
-                        <img src="img/istiLogo.png" alt="isti logo" height="80" width="80">
+                    <a href="http://www.isti.cnr.it/ ">
+                        <img src="img/istiLogo.png " alt="isti logo " height="80 " width="80 ">
                     </a>
 
-                    <a href="http://vcg.isti.cnr.it/">
-                        <img src="img/vclab.png" alt="vclab logo" height="80" width="80">
+                    <a href="http://vcg.isti.cnr.it/ ">
+                        <img src="img/vclab.png " alt="vclab logo " height="80 " width="80 ">
                     </a>
 
                 </div>
 
-                <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="padding:10px;"></div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg " style="padding:10px; "></div>
 
-                <div class="col-xs-6 col-sm-4">
-                    <a href="http://vcg.isti.cnr.it/~cignoni/">Paolo Cignoni</a>
+                <div class="col-xs-6 col-sm-4 ">
+                    <a href="http://vcg.isti.cnr.it/~cignoni/ ">Paolo Cignoni</a>
                     <br/>
-                    <a href="http://vcg.isti.cnr.it">Visual Computing Lab</a>
+                    <a href="http://vcg.isti.cnr.it ">Visual Computing Lab</a>
                     <br/>
-                    <a href="http://www.isti.cnr.it">ISTI-CNR</a>
+                    <a href="http://www.isti.cnr.it ">ISTI-CNR</a>
                 </div>
 
-                <div class="col-xs-6 col-sm-3">
-                    <div class="nav navbar-nav">
-                        <a class="btn btn-social-icon" href="mailto:paolo.cignoni@isti.cnr.it" target="_top"><i class="fa fa-envelope-o"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/MeshLab"><i class="fa fa-facebook"></i></a>
+                <div class="col-xs-6 col-sm-3 ">
+                    <div class="nav navbar-nav ">
+                        <a class="btn btn-social-icon " href="mailto:paolo.cignoni@isti.cnr.it " target="_top "><i class="fa fa-envelope-o "></i></a>
+                        <a class="btn btn-social-icon btn-facebook " href="http://www.facebook.com/MeshLab "><i class="fa fa-facebook "></i></a>
                     </div>
                 </div>
 
