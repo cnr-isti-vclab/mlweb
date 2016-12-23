@@ -69,6 +69,121 @@ app.controller('featuresController', function () {
 
 
             ]
+
     this.features1 = features.splice(0, Math.ceil(features.length / 2));
     this.features2 = features;
+    /**********************************************************************
+    A few notes on how to compile this list: 
+    - As venue we use the format in our vclab publications page (without the year)
+    - First Name just the initials.
+    - 
+    ***********************************************************************/
+    this.papers = [
+        {
+            description: 'General MeshLab citation. It should be used whenever you use MeshLab for many small things during your research.',
+            paperTitle: 'MeshLab: an Open-Source Mesh Processing Tool',
+            paperVenue: 'Sixth Eurographics Italian Chapter Conference, page 129-136',
+            paperAuthors: 'P. Cignoni, M. Callieri, M. Corsini, M. Dellepiane, F. Ganovelli, G. Ranzuglia',
+            paperYear: '2008',
+            paperPDF: 'http://vcg.isti.cnr.it/Publications/2008/CCCDGR08/MeshLabEGIT.final.pdf',
+            bibtex: '@inproceedings {LocalChapterEvents:ItalChap:ItalianChapConf2008:129-136,\
+                        booktitle = {Eurographics Italian Chapter Conference},\
+                        editor = {Vittorio Scarano and Rosario De Chiara and Ugo Erra},\
+                        title = {{MeshLab: an Open-Source Mesh Processing Tool}},\
+                        author = {Cignoni, Paolo and Callieri, Marco and Corsini, Massimiliano and Dellepiane, Matteo and Ganovelli, Fabio and Ranzuglia, Guido},\
+                        year = {2008},\
+                        publisher = {The Eurographics Association},\
+                        ISBN = {978-3-905673-68-5},\
+                        DOI = {10.2312/LocalChapterEvents/ItalChap/ItalianChapConf2008/129-136}\
+                        }'
+                   },
+        {
+            description: 'More specific citation if you have used the Meshlab in 3D scanning with color pipelines, like for example when you use MeshLab in a archeological project to finish up textured models.',
+            paperTitle: 'MeshLab as a complete tool for the integration of photos and color with high resolution 3D geometry data',
+            paperVenue: 'CAA 2012 Conference Proceedings, page 406-416',
+            paperAuthors: 'G. Ranzuglia, M. Callieri, M. Dellepiane, P. Cignoni, R. Scopigno',
+            paperYear: '2013',
+            paperPDF: '',
+            bibtex: '@InProceedings {RCDCS13,\
+                        author       = "Ranzuglia, Guido and Callieri, Marco and Dellepiane, Matteo and Cignoni, Paolo and Scopigno, Roberto",\
+                        title        = "MeshLab as a complete tool for the integration of photos and color with high resolution 3D geometry data",\
+                        booktitle    = "CAA 2012 Conference Proceedings",\
+                        pages        = "406-416",\
+                        year         = "2013",\
+                        publisher    = "Pallas Publications - Amsterdam University Press (AUP)",\
+                        url          = "http://vcg.isti.cnr.it/Publications/2013/RCDCS13"\
+                        }'
+                   },
+        {
+            description: 'When using MeshLab for computing differences between meshes using Hausdorff Distance',
+            paperTitle: 'Metro: measuring error on simplified surfaces',
+            paperVenue: 'Computer Graphics Forum 17 (2), 167-174',
+            paperAuthors: 'P. Cignoni, C. Rocchini, R. Scopigno',
+            paperYear: '1998',
+            paperPDF: '',
+            bibtex: '@inproceedings {cignoni1998metro,\
+                        title={Metro: measuring error on simplified surfaces},\
+                        author={Cignoni, Paolo and Rocchini, Claudio and Scopigno, Roberto},\
+                        booktitle={Computer Graphics Forum},\
+                        volume={17},\
+                        number={2},\
+                        pages={167--174},\
+                        year={1998},\
+                        organization={Blackwell Publishers}\
+                     }'
+        },
+        {
+            description: 'When using MeshLab to generate well distributed point sampling over mesh surfaces or when used to uniformly simplify large point clouds.',
+            paperTitle: 'Efficient and Flexible Sampling with Blue Noise Properties of Triangular Meshes',
+            paperVenue: 'IEEE Trans. on Visualization and Computer Graphics, Vol. 18, Num. 6, page 914--924',
+            paperAuthors: 'G. Ranzuglia, M. Callieri, M. Dellepiane, P. Cignoni, R. Scopigno',
+            paperYear: '2012',
+            paperPDF: 'http://vcg.isti.cnr.it/Publications/2012/CCS12/TVCG-2011-07-0217.pdf',
+            bibtex: '@Article\{CCS12,\
+                      author       = "Corsini, Massimiliano and Cignoni, Paolo and Scopigno, Roberto",\
+                      title        = "Efficient and Flexible Sampling with Blue Noise Properties of Triangular Meshes",\
+                      journal      = "IEEE Transaction on Visualization and Computer Graphics",\
+                      number       = "6",\
+                      volume       = "18",\
+                      pages        = "914--924",\
+                      year         = "2012",\
+                      note         = "http://doi.ieeecomputersociety.org/10.1109/TVCG.2012.34",\
+                      url          = "http://vcg.isti.cnr.it/Publications/2012/CCS12"\
+                    }'
+                   },
+        {
+            description: 'When using Screened Poisson Surface Reconstruction.',
+            paperTitle: 'Screened poisson surface reconstruction',
+            paperVenue: 'ACM Transactions on Graphics (TOG), 32(3), 29',
+            paperAuthors: 'M. Kazhdan, H. Hoppe',
+            paperYear: '2013',
+            paperPDF: 'http://www.cs.jhu.edu/~misha/MyPapers/ToG13.pdf',
+            bibtex: '@article{kazhdan2013screened,\
+                      title={Screened poisson surface reconstruction},\
+                      author={Kazhdan, Michael and Hoppe, Hugues},\
+                      journal={ACM Transactions on Graphics (TOG)},\
+                      volume={32},\
+                      number={3},\
+                      pages={29},\
+                      year={2013},\
+                      publisher={ACM}\
+                    }'
+                   },
+        {
+            description: 'When Radiance Scaling shader effect.',
+            paperTitle: 'Radiance scaling for versatile surface enhancement',
+            paperVenue: 'Proceedings of the 2010 ACM SIGGRAPH symposium on Interactive 3D Graphics and Games (pp. 143-150). ACM',
+            paperAuthors: 'R. Vergne, R. Pacanowski, P. Barla, X. Granier, C. Schlick',
+            paperYear: '2010',
+            paperPDF: 'https://hal.inria.fr/inria-00449828/file/RadianceScaling.pdf',
+            bibtex: '@inproceedings{vergne2010radiance,\
+                        title={Radiance scaling for versatile surface enhancement},\
+                        author={Vergne, Romain and Pacanowski, Romain and Barla, Pascal and Granier, Xavier and Schlick, Christophe},\
+                        booktitle={Proceedings of the 2010 ACM SIGGRAPH symposium on Interactive 3D Graphics and Games},\
+                        pages={143--150},\
+                        year={2010},\
+                        organization={ACM}\
+                        }'
+                   },
+        ]
 });
