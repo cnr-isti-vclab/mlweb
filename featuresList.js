@@ -44,7 +44,7 @@ app.controller('featuresController', function () {
         {
             name: 'Color Processing',
             image: 'img/Feature/ColorProcessing.jpg',
-            description: 'MeshLab can manipulate the vertex and face colors of the 3D model using a series of photoshop-like filters (gamma, saturation, brightness, contrast, levels, smoothing, sharpening). Automatic filters are available to calculate Ambient Occlusion and Volumetric Obscurance and map it to vertex or face color. It is also possible to explicitly write color function, to highlight specific characteristics of the 3D model. MeshLab also offers a painting interface for vertex colors. Scalar values, possibly the result of a metric calculation on the 3D surface, may also be mapped on vertex/face color, to have a visual representation of that value.'
+            description: 'MeshLab can manipulate the vertex and face colors using a series of photoshop-like filters (gamma, saturation, brightness, contrast, levels, smoothing, sharpening). Automatic filters are available to calculate Ambient Occlusion and Volumetric Obscurance and to map it to vertex or face color. It is also possible to explicitly write color functions, to highlight specific characteristics of the 3D model. MeshLab also offers a painting interface for vertex colors. Scalar values, possibly the result of a metric calculation on the 3D surface, may also be mapped on vertex/face color, to have a visual representation of that value.'
                             },
         {
             name: '3D Printing: Offsetting, Hollowing, Closing',
@@ -133,7 +133,7 @@ app.controller('featuresController', function () {
                      }'
         },
         {
-            description: 'When using MeshLab to generate well distributed point sampling over mesh surfaces or when used to uniformly simplify large point clouds.',
+            description: 'When using MeshLab to generate well distributed (Poisson Disk) point sampling over mesh surfaces or when used to uniformly simplify large point clouds.',
             paperTitle: 'Efficient and Flexible Sampling with Blue Noise Properties of Triangular Meshes',
             paperVenue: 'IEEE Trans. on Visualization and Computer Graphics, Vol. 18, Num. 6, page 914--924',
             paperAuthors: 'G. Ranzuglia, M. Callieri, M. Dellepiane, P. Cignoni, R. Scopigno',
@@ -152,7 +152,7 @@ app.controller('featuresController', function () {
                     }'
                    },
         {
-            description: 'When using Screened Poisson Surface Reconstruction.',
+            description: 'When using Screened Poisson Surface Reconstruction algorithm to build a triangulated mesh out of a point cloud.',
             paperTitle: 'Screened poisson surface reconstruction',
             paperVenue: 'ACM Transactions on Graphics (TOG), 32(3), 29',
             paperAuthors: 'M. Kazhdan, H. Hoppe',
@@ -170,7 +170,7 @@ app.controller('featuresController', function () {
                     }'
                    },
         {
-            description: 'When Radiance Scaling shader effect.',
+            description: 'When using Radiance Scaling shader effect to enhance the surface features.',
             paperTitle: 'Radiance scaling for versatile surface enhancement',
             paperVenue: 'Proceedings of the 2010 ACM SIGGRAPH symposium on Interactive 3D Graphics and Games (pp. 143-150). ACM',
             paperAuthors: 'R. Vergne, R. Pacanowski, P. Barla, X. Granier, C. Schlick',
