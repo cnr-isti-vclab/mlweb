@@ -170,6 +170,22 @@ app.controller('featuresController', function () {
                     }'
                    },
         {
+            description: 'When using the isoparametric mesh parametrization algorithm for remeshing surfaces.',
+            paperTitle: 'Almost isometric mesh parameterization through abstract domains',
+            paperVenue: 'IEEE Transaction on Visualization and Computer Graphics, Volume 16, Number 4',
+            paperAuthors: 'Nico Pietroni, Marco Tarini, Paolo Cignoni',
+            paperYear: '2010',
+            paperPDF: 'http://vcg.isti.cnr.it/Publications/2010/PTC10/Pietroni%20Tarini%20Cignoni%20-%20Almost%20isometric%20mesh%20parameterization%20-%20TVCG%202009.pdf',
+            bibtex: '@article{PTC10,\
+                      author       = {Pietroni, Nico and Tarini, Marco and Cignoni, Paolo},\
+                      title        = {Almost isometric mesh parameterization through abstract domains},\
+                      journal      = {IEEE Transaction on Visualization and Computer Graphics},\
+                      number       = {4},\
+                      volume       = {16},\
+                      year         = {2010},\
+                    }'
+                   },
+        {
             description: 'When using Radiance Scaling shader effect to enhance the surface features.',
             paperTitle: 'Radiance scaling for versatile surface enhancement',
             paperVenue: 'Proceedings of the 2010 ACM SIGGRAPH symposium on Interactive 3D Graphics and Games (pp. 143-150). ACM',
