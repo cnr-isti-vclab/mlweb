@@ -191,7 +191,7 @@ app.controller('featuresController', function () {
             paperVenue: 'Computer Graphics Forum 29 (2), 407-418 ',
             paperAuthors: 'M Tarini, N Pietroni, P Cignoni, D Panozzo, E Puppo',
             paperYear: '2010',
-            paperPDF: 'http://vcg.isti.cnr.it/Publications/2010/PTC10/Pietroni%20Tarini%20Cignoni%20-%20Almost%20isometric%20mesh%20parameterization%20-%20TVCG%202009.pdf',
+            paperPDF: 'http://vcg.isti.cnr.it/quadSemplif/Tarini%20Pietroni%20Cignoni%20Panozzo%20Puppo%20-%20Practical%20Quad%20Semplification%20-%20EG%202010.pdf',
             bibtex: '@Article\{TPCPP10,\
                       author       = {Tarini, Marco and Pietroni, Nico and Cignoni, Paolo and Panozzo, Daniele and Puppo, Enrico},\
                       title        = {Practical quad mesh implification},\
