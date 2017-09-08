@@ -186,6 +186,23 @@ app.controller('featuresController', function () {
                     }'
                    },
         {
+            description: 'When using the quad and tri-to-quad functionalities to automatically convert a triangular mesh into a quad mesh.',
+            paperTitle: 'Practical quad mesh simplification ',
+            paperVenue: 'Computer Graphics Forum 29 (2), 407-418 ',
+            paperAuthors: 'M Tarini, N Pietroni, P Cignoni, D Panozzo, E Puppo',
+            paperYear: '2010',
+            paperPDF: 'http://vcg.isti.cnr.it/Publications/2010/PTC10/Pietroni%20Tarini%20Cignoni%20-%20Almost%20isometric%20mesh%20parameterization%20-%20TVCG%202009.pdf',
+            bibtex: '@Article\{TPCPP10,\
+                      author       = {Tarini, Marco and Pietroni, Nico and Cignoni, Paolo and Panozzo, Daniele and Puppo, Enrico},\
+                      title        = {Practical quad mesh implification},\
+                      journal      = {Computer Graphics Forum (Special Issue of Eurographics 2010 Conference)},\
+                      number       = 2,\
+                      volume       = 29,\
+                      year         = 200,\
+                      url          = http://vcg.isti.cnr.it/Publications/2010/TPCPP10\
+                     }'
+                },
+        {
             description: 'When using Radiance Scaling shader effect to enhance the surface features.',
             paperTitle: 'Radiance scaling for versatile surface enhancement',
             paperVenue: 'Proceedings of the 2010 ACM SIGGRAPH symposium on Interactive 3D Graphics and Games (pp. 143-150). ACM',
