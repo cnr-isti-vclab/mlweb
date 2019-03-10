@@ -170,6 +170,24 @@ app.controller('featuresController', function () {
                     }'
                    },
         {
+            description: 'When using the many functionalities for transfering attributes between meshes and textures.',
+            paperTitle: 'Preserving attribute values on simplified meshes by resampling detail textures',
+            paperVenue: 'The Visual Computer, 15 (9)',
+            paperAuthors: 'Paolo Cignoni, Claudio Montani, Claudio Rocchini, Roberto Scopigno, Marco Tarini',
+            paperYear: '1999',
+            paperPDF: 'http://vcg.isti.cnr.it/publications/papers/preservingtvc.pdf',
+            bibtex: '@article{PTC10,\
+                      title={Preserving attribute values on simplified meshes by resampling detail textures},\
+                      author={Cignoni, Paolo and Montani, Claudio and Rocchini, Claudio and Scopigno, Roberto and Tarini, Marco},\
+                      journal={The Visual Computer},\
+                      volume={15},\
+                      number={10},\
+                      pages={519--539},\
+                      year={1999},\
+                      publisher={Springer}\
+                    }'
+                   },
+        {
             description: 'When using the isoparametric mesh parametrization algorithm for remeshing surfaces.',
             paperTitle: 'Almost isometric mesh parameterization through abstract domains',
             paperVenue: 'IEEE Transaction on Visualization and Computer Graphics, Volume 16, Number 4',
