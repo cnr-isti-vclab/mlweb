@@ -51,6 +51,12 @@ crossorigin="anonymous"></script>
                 References</a></li>
             <li><a href="#about"><i class="fa fa-envelope fa-fw"></i> About</a></li>
           </ul>
+          <div cclass="navbar-collapse collapse" style="text-align: right;"> <a
+              class="btn btn-social-icon btn-facebook" href="http://github.com/cnr-isti-vclab/meshlab"><i
+                class="fa fa-github fa-fw"></i></a> <a class="btn btn-social-icon btn-facebook"
+              href="mailto:paolo.cignoni@isti.cnr.it"><i class="fa fa-envelope fa-fw"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/MeshLab"><i
+                class="fa fa-facebook fa-fw"></i></a> </div>
         </div>
       </div>
     </nav>
@@ -402,7 +408,7 @@ crossorigin="anonymous"></script>
                         <div id="id_bib_{{$index}}" class="collapse "> <small><code>{{pi.bibtex}}</code></small>
                         </div>
                       </td>
-                      <td class="col-xs-1"> <a href={{pi.paperPDF}} class="btn btn-primary btn-block "
+                      <td class="col-xs-1"> <a href="%7B%7Bpi.paperPDF%7D%7D" class="btn btn-primary btn-block "
                           role="button "> <i class="fa fa-file-pdf-o fa-fw "></i>PDF</a>
                       </td>
                     </tr>
@@ -424,20 +430,11 @@ crossorigin="anonymous"></script>
               <img src="img/vclab.png" alt="vclab logo " width="80 " height="80 ">
             </a> </div>
           <div class="col-xs-12 hidden-sm hidden-md hidden-lg " style="padding:10px; "></div>
-          <div class="col-xs-6 col-sm-4 "> <a href="http://vcg.isti.cnr.it/~cignoni/">Paolo
+          <div class="col-xs-6 col-sm-4 "> <a href="http://vcg.isti.cnr.it/%7Ecignoni/">Paolo
               Cignoni</a> <br>
-            <a href="http://vcg.isti.cnr.it/~ranzuglia/">Guido Ranzuglia</a>
-            <br>
+            <a href="http://vcg.isti.cnr.it/%7Eranzuglia/">Guido Ranzuglia</a> <br>
             <a href="http://vcg.isti.cnr.it">Visual Computing Lab</a> <br>
             <a href="http://www.isti.cnr.it">ISTI-CNR</a> </div>
-          <div class="col-xs-6 col-sm-3 ">
-            <div class="nav navbar-nav "> <a class="btn btn-social-icon btn-facebook"
-                href="http://github.com/cnr-isti-vclab/meshlab"><i class="fa fa-github fa-fw"></i></a>
-              <a class="btn btn-social-icon btn-facebook" href="mailto:paolo.cignoni@isti.cnr.it"><i
-                  class="fa fa-envelope fa-fw"></i></a> <a class="btn btn-social-icon btn-facebook"
-                href="http://www.facebook.com/MeshLab"><i class="fa fa-facebook fa-fw"></i></a>
-            </div>
-          </div>
         </div>
       </div>
     </footer>
