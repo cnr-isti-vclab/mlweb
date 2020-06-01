@@ -33,9 +33,9 @@ crossorigin="anonymous"></script>
       <div class="container-fluid">
         <div class="navbar-header"> <button type="button" class="navbar-toggle"
             data-toggle="collapse" data-target="#MLnavbar" aria-expanded="false"
-            aria-controls="navbar"> <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span> <span class="icon-bar"></span> <span
-              class="icon-bar"></span> </button> <a class="navbar-brand" id="MLlogo"
+            aria-controls="navbar"> <span class="sr-only">Toggle
+              navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> </button> <a class="navbar-brand" id="MLlogo"
             href="#"><img src="img/meshlabjsLogo.png" width="30" height="30"></a>
         </div>
         <div id="MLnavbar" class="navbar-collapse collapse">
@@ -103,6 +103,27 @@ crossorigin="anonymous"></script>
           <h2><strong>News</strong></h2>
         </div>
         <div class="col-xs-12">
+          <h3>MeshLab 2020.06 released<br>
+            <small>01/06/2020</small></h3>
+          <p>MeshLab 2020.06 is out! You can download in the <a href="#download">download</a>
+            section, or in the <a href="https://github.com/cnr-isti-vclab/meshlab/releases">github
+              release page</a>. </p>
+          <p><b>Changelog:</b> <br>
+            Due to the deprecation of QtScript and all the issues related to it,
+            we are dropping from MeshLab the support to XML plugins, and
+            therefore all the XML plugins have been transformed to classic
+            plugins in this MeshLab version. The involved plugins are: </p>
+          <ul>
+            <li>Screened Poisson;</li>
+            <li>Measure;</li>
+            <li>Voronoi;</li>
+            <li>Mutualinfo;</li>
+            <li>Sketchfab;</li>
+          </ul>
+          Due to this porting, all old .mlx MeshLab scripts that involve one of
+          these plugins may not work on MeshLab and MeshLabServer 2020.06.
+          Starting from MeshLab 2020.07, XML plugins won't compile anymore and
+          they cannot be loaded anymore. <br>
           <h3>New MeshLab 2020.03 and automatic deployment<br>
             <small>26/3/2020</small></h3>
           <p>We are happy to annouce that MeshLab 2020.03 is out! We set up an
@@ -163,20 +184,22 @@ crossorigin="anonymous"></script>
           <h2><strong>Download</strong></h2>
           <div class="well">
             <div class="row">
-              <div class="col-xs-12 col-md-10">
-                <h3>MeshLab 2020.03</h3>
-                26/03/2020<br>
+              <div class="col-xs-12 col-md-8">
+                <h3>MeshLab 2020.06</h3>
+                01/06/2020<br>
               </div>
-              <div class="col-xs-12 col-md-2">
-                <div class="span1"> <a href="https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.03/MeshLab2020.03-windows.exe"
+              <div class="col-xs-12 col-md-4">
+                <div class="span1"> <a href="https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.06/MeshLab2020.06-windows.exe"
                     class="btn btn-success btn-lg btn-block">Win 64 <i class="fa fa-cloud-download fa-fw"></i></a>
-                  <a href="https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.03/MeshLab2020.03-macos.dmg"
+                  <a href="https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.06/MeshLab2020.06-macos.dmg"
                     class="btn btn-success btn-lg btn-block"> MacOS <i class="fa fa-cloud-download fa-fw"></i></a>
-                  <a href="https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.03/MeshLab2020.03-linux.AppImage"
+                  <a href="https://github.com/cnr-isti-vclab/meshlab/releases/download/Meshlab-2020.06/MeshLab2020.06-linux.AppImage"
                     class="btn btn-success btn-lg btn-block"> Linux AppImage <i
-                      class="fa fa-cloud-download fa-fw"></i></a> <a href="http://github.com/cnr-isti-vclab/meshlab"
-                    class="btn btn-success btn-lg btn-block"> Sources <i class="fa fa-cloud-download fa-fw"></i></a>
-                </div>
+                      class="fa fa-cloud-download fa-fw"></i></a> 
+                  <a href="https://snapcraft.io/meshlab"
+                    class="btn btn-success btn-lg btn-block"> Linux Snap <i class="fa fa-cloud-download fa-fw"></i></a>
+                  <a href="http://github.com/cnr-isti-vclab/meshlab" class="btn btn-success btn-lg btn-block">
+                    Sources <i class="fa fa-cloud-download fa-fw"></i></a> </div>
               </div>
             </div>
           </div>
