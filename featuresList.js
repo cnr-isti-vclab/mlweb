@@ -103,7 +103,7 @@ app.controller('featuresController', function () {
             paperVenue: 'CAA 2012 Conference Proceedings, page 406-416',
             paperAuthors: 'G. Ranzuglia, M. Callieri, M. Dellepiane, P. Cignoni, R. Scopigno',
             paperYear: '2013',
-            paperPDF: '',
+            paperPDF: 'http://vcg.isti.cnr.it/Publications/2013/RCDCS13/MeshLab_Color.pdf',
             bibtex: '@InProceedings {RCDCS13,\
                         author       = "Ranzuglia, Guido and Callieri, Marco and Dellepiane, Matteo and Cignoni, Paolo and Scopigno, Roberto",\
                         title        = "MeshLab as a complete tool for the integration of photos and color with high resolution 3D geometry data",\
@@ -120,7 +120,7 @@ app.controller('featuresController', function () {
             paperVenue: 'Computer Graphics Forum 17 (2), 167-174',
             paperAuthors: 'P. Cignoni, C. Rocchini, R. Scopigno',
             paperYear: '1998',
-            paperPDF: '',
+            paperPDF: 'http://vcg.isti.cnr.it/publications/papers/metro.pdf',
             bibtex: '@inproceedings {cignoni1998metro,\
                         title={Metro: measuring error on simplified surfaces},\
                         author={Cignoni, Paolo and Rocchini, Claudio and Scopigno, Roberto},\
